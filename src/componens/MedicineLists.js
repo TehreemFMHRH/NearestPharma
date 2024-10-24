@@ -232,13 +232,6 @@ const MedicineLists = () => {
           >
             Add Medicine
           </Button>
-          <Button
-            className="add-button"
-            onClick={handleCreateNewMedicine}
-            style={{ backgroundColor: "#4caf50", color: "white", margin: "3px" }}
-          >
-            Create New Medicine
-          </Button>
         </div>
       </div>
       {showNewMedicineForm && (

@@ -24,7 +24,7 @@ function UpdatedMedicineList() {
   const [selectedMedicine, setSelectedMedicine] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
-  const [limit, setLimit] = useState(10); // Default limit
+  const [limit, setLimit] = useState(1000);
 
   useEffect(() => {
     if (!userInfo || !userInfo._id) {
@@ -223,7 +223,7 @@ function UpdatedMedicineList() {
             </div>
           )}
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center", marginTop: "20px" }}>
-              <Button 
+              {/* {<Button 
                 disabled={currentPage === 1} 
                 onClick={handlePreviousPage} 
                 style={
@@ -247,7 +247,7 @@ function UpdatedMedicineList() {
                 }}
               >
               Next
-            </Button>
+            </Button>} */}
           </div>
         </>
       )}
